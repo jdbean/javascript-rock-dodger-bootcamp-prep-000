@@ -131,7 +131,6 @@ function endGame() {
 
   ROCKS.forEach(function(rock) {
     rock.remove()
-    done()
   });
 
   document.removeEventListener('keydown', moveDodger);
