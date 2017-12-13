@@ -179,13 +179,12 @@ function moveDodgerRight() {
    window.requestAnimationFrame(function() {
    var rightNumbers = dodger.style.left
    var right = parseInt(rightNumbers, 10) + 40
-   
-   if (right < GAME_WIDTH) {
-   window.requestAnimationFrame(moveDodgerRight)
-   }
-   dodger.style.left = `${right + 4}px
 
- }
+   if (right < GAME_WIDTH) {
+     dodger.style.left = `${right + 4}px
+   }
+  })
+}
 
 /**
  * @param {string} p The position property
