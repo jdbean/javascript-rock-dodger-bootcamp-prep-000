@@ -178,9 +178,9 @@ function moveDodgerRight() {
    */
   window.requestAnimationFrame(function() {
     var rightNumbers = dodger.style.left
-    var right = parseInt(rightNumbers, 10) + 40
+    var right = parseInt(rightNumbers, 10)
 
-    if (right < GAME_WIDTH) {
+    if (right < 360) {
       dodger.style.left = `${right + 4}px`
     }
   })
