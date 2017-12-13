@@ -182,7 +182,7 @@ function moveDodgerRight() {
 
    dodger.style.left = `${right + 4}px`
 
-   if (right > GAME_WIDTH) {
+   if (right < GAME_WIDTH) {
      window.requestAnimationFrame(moveDodgerRight)
    }
  }
